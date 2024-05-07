@@ -1,0 +1,6 @@
+race,sex,age,hospital_stay,HbA1c,diabetesMed,admit_source,patient_visits,num_medications,num_diagnosis,insulin_level,readmitted
+Caucasian,Female,>= 60 years,4,Elevated,Yes,Emerg,0,12,9,No,No
+Caucasian,Female,>= 60 years,3,Elevated,Yes,Emerg,0,22,9,Steady,No
+Caucasian,Female,>= 60 years,12,Normal,Yes,Others,0,23,9,Steady,No
+Caucasian,Male,>= 60 years,8,Elevated,Yes,Others,0,3,9,No,No
+Caucasian,Male,>= 60 years,11,Elevated,Yes,Emerg,2,6,9,No,Yes
