@@ -25,22 +25,6 @@ readmit_data <- read_csv("inst/sample_readmit_data.csv")
 ## Load prediction model
 readmit_model <- read_rds("inst/final_readmission_model.rds")
 
-#automate-r@automate-r.iam.gserviceaccount.com
-
-## Make secret key
-gargle::secret_make_key()
-
-
-## Read renv
-readRenviron("~/.Renviron")
-
-Sys.getenv("GOOGLEDRIVE_KEY")
-
-## Encrypt the file
-gargle::secret_encrypt_json(json = "inst/automate-r-614641f778bd.json",
-                            path = "inst/googledrive_encrpyt.json",
-                            key = "GOOGLEDRIVE_KEY")
-
 ## googlesheet De-auth setup
 googledrive::drive_auth(
   path = gargle::secret_decrypt_json(
